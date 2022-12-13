@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_m2m_datasource">
+    <sys_ux_composite_data_m2m_datasource action="DELETE">
+        <dataset display_value="Needit Application EVAM Definition">d3aecdf02f7311101b9aa85df699b6b0</dataset>
+        <datasource display_value="">57cf01b02f7311101b9aa85df699b6ec</datasource>
+        <sys_class_name>sys_ux_composite_data_m2m_datasource</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-12-13 15:35:16</sys_created_on>
+        <sys_id>412011f02f7311101b9aa85df699b677</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ux_composite_data_m2m_datasource_412011f02f7311101b9aa85df699b677</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-12-13 15:35:16</sys_updated_on>
+    </sys_ux_composite_data_m2m_datasource>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>39ed92fcdb7699dc4d2bac44d4961913</instance_id>
+        <instance_name>dev142559</instance_name>
+        <name>sys_ux_composite_data_m2m_datasource_412011f02f7311101b9aa85df699b677</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_m2m_datasource"><sys_ux_composite_data_m2m_datasource action="INSERT_OR_UPDATE"><dataset display_value="Needit Application EVAM Definition">d3aecdf02f7311101b9aa85df699b6b0</dataset><datasource display_value="">57cf01b02f7311101b9aa85df699b6ec</datasource><sys_class_name>sys_ux_composite_data_m2m_datasource</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-12-13 15:35:16</sys_created_on><sys_id>412011f02f7311101b9aa85df699b677</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package><sys_policy/><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_update_name>sys_ux_composite_data_m2m_datasource_412011f02f7311101b9aa85df699b677</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-12-13 15:35:16</sys_updated_on></sys_ux_composite_data_m2m_datasource></record_update>]]></payload>
+        <payload_hash>-669513105</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>44fb0d7c2f3311101b9aa85df699b603</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-12-13 15:35:17</sys_created_on>
+        <sys_id>092011f02f7311101b9aa85df699b679</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1850c203b6d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-12-13 15:35:17</sys_updated_on>
+        <type>EVAM Datasource M2M</type>
+        <update_guid>412011f060731110a50346a73e794379</update_guid>
+        <update_guid_history>412011f060731110a50346a73e794379:-669513105</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-12-13 16:54:21</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_composite_data_m2m_datasource">sys_ux_composite_data_m2m_datasource</sys_db_object>
+        <sys_id>5f78a2bde42e410e97de08e6a236bf64</sys_id>
+        <sys_metadata>412011f02f7311101b9aa85df699b677</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_ux_composite_data_m2m_datasource_412011f02f7311101b9aa85df699b677</sys_update_name>
+        <sys_update_version display_value="sys_ux_composite_data_m2m_datasource_412011f02f7311101b9aa85df699b677">092011f02f7311101b9aa85df699b679</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-12-13 16:54:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
