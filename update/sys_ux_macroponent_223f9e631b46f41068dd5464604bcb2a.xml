@@ -854,7 +854,7 @@
             "data" : {
               "type" : "DATA_OUTPUT_BINDING",
               "binding" : {
-                "address" : [ "my_needit_app_rec_evam_dr", "compositeDataViews" ]
+                "address" : [ "my_needit_app_records_evam_dr", "compositeDataViews" ]
               }
             },
             "toggleView" : {
@@ -895,14 +895,38 @@
             },
             "hidePaginationControls" : {
               "type" : "JSON_LITERAL",
-              "value" : false
+              "value" : null
             },
             "daClientActionContract" : {
               "type" : "JSON_LITERAL",
               "value" : null
             }
           },
-          "eventMappings" : [ ],
+          "eventMappings" : [ {
+            "eventMappingId" : "clbnlcaabboaaaaeezccaggwskccomddjjc",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "now_data_set.NOW_DATA_SET#PAGINATION_BUTTON_CLICKED",
+            "sourceEventCorrelationId" : null,
+            "sourceEventDefinition" : {
+              "apiName" : "now_data_set.NOW_DATA_SET#PAGINATION_BUTTON_CLICKED",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : {
+                "sysId" : "bab5e5cd2f3351101b9aa85df699b672"
+              },
+              "conditional" : null,
+              "declarativeAction" : null,
+              "event" : null,
+              "operation" : null,
+              "targetId" : "clbnlcaabbpaaaaffaaccaggwalkhhddgeed",
+              "type" : "CLIENT_SCRIPT"
+            } ]
+          } ],
           "slot" : "Main",
           "definition" : {
             "id" : "dec0b89ec87f44e66126f8cc78e53891",
@@ -1410,7 +1434,7 @@
     "id" : "e6af35d9dbb810106b3982c9689619e5",
     "type" : "COMPOSITE"
   },
-  "elementId" : "my_needit_app_rec_evam_dr",
+  "elementId" : "my_needit_app_records_evam_dr",
   "elementLabel" : "My NeedIt App Records EVAM DR",
   "eventMappings" : [ ],
   "inputValues" : {
@@ -1419,16 +1443,22 @@
       "value" : "d3aecdf02f7311101b9aa85df699b6b0"
     },
     "pageCursor" : {
-      "type" : "JSON_LITERAL",
-      "value" : ""
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "niPageCursor" ]
+      }
     },
     "pageSize" : {
-      "type" : "JSON_LITERAL",
-      "value" : "9"
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "niPageSize" ]
+      }
     },
     "pageNumber" : {
-      "type" : "JSON_LITERAL",
-      "value" : "0"
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "niPageNumber" ]
+      }
     },
     "filterPreference" : {
       "type" : "JSON_LITERAL",
@@ -1437,12 +1467,80 @@
   },
   "readEvaluationMode" : "EAGER"
 } ]</data>
-        <dispatched_events/>
+        <dispatched_events>f36755052f3351101b9aa85df699b6c9</dispatched_events>
         <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
-        <handled_events/>
+        <handled_events>bf0799cd2fff11101b9aa85df699b612</handled_events>
         <interactions/>
         <interfaces/>
-        <internal_event_mappings>{ }</internal_event_mappings>
+        <internal_event_mappings>{
+  "x_58872_needit.OPEN_NEEDIT_APP_RECORDS" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "x_58872_needit.NAV_ITEM_SELECTED_RELAY_223f9e631b46f41068dd5464604bcb2a",
+      "payload" : {
+        "type" : "MAP_CONTAINER",
+        "container" : {
+          "route" : {
+            "type" : "JSON_LITERAL",
+            "value" : "needit-app-records"
+          },
+          "fields" : {
+            "type" : "MAP_CONTAINER",
+            "container" : {
+              "sysId" : {
+                "type" : "EVENT_PAYLOAD_BINDING",
+                "binding" : {
+                  "address" : [ "sysId" ]
+                }
+              },
+              "table" : {
+                "type" : "EVENT_PAYLOAD_BINDING",
+                "binding" : {
+                  "address" : [ "table" ]
+                }
+              }
+            }
+          },
+          "params" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "redirect" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "passiveNavigation" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "title" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "multiInstField" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "targetRoute" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "external" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          }
+        }
+      },
+      "sysId" : "f36755052f3351101b9aa85df699b6c9"
+    },
+    "operation" : null,
+    "targetId" : "clbnizdpkaaaahhggccaggwccoiiaktro",
+    "type" : "EVENT"
+  } ]
+}</internal_event_mappings>
         <layout>{
   "default" : {
     "children" : null,
@@ -1487,18 +1585,51 @@
         <root_component_config>{ }</root_component_config>
         <root_component_definition/>
         <schema_version>1.0.0</schema_version>
-        <state_properties>[ ]</state_properties>
+        <state_properties>[ {
+  "name" : "niPageSize",
+  "label" : "niPageSize",
+  "fieldType" : "number",
+  "valueType" : "number",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : 6
+  }
+}, {
+  "name" : "niPageCursor",
+  "label" : "niPageCursor",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
+}, {
+  "name" : "niPageNumber",
+  "label" : "niPageNumber",
+  "fieldType" : "number",
+  "valueType" : "number",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : 1
+  }
+} ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-08-24 18:11:54</sys_created_on>
         <sys_id>223f9e631b46f41068dd5464604bcb2a</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>42</sys_mod_count>
         <sys_name>Home</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_ux_macroponent_223f9e631b46f41068dd5464604bcb2a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-12-13 16:38:16</sys_updated_on>
+        <sys_updated_on>2022-12-14 11:50:17</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>
